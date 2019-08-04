@@ -17,3 +17,11 @@ Discord Red (dnd) - #f04747
 Gold (Devs/Staff Managers) - #d4af37
 
 Purple (Admins) - #593695
+
+--------------
+
+Purple (Logo) - #875053
+
+Pink (Logo) - #fbbfca
+
+Yellow (Logo) - #d2bf55

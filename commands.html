@@ -186,9 +186,14 @@
 					</tr>
 					</table>
 				</div>
+				<div class="switcherDiv">
+          <button class="switcher" onClick="hideAll()">Hide All Categories</button>
+        </div>
       </div>
 
-
+			<div class="support">
+				<a class="current" href="support.html"><p class="supportdescription">Click here to view Exile's <span class="supportspan">Support</span> commands</p></a>
+			</div>
 
 		</div>
 
@@ -246,6 +251,17 @@
 				allcommands.style.display = "none"
 				modcommands.style.display = "none"
 				funcommands.style.display = "block"
+			}
+
+			function hideAll() {
+				let helpcommands = document.getElementById('helptable')
+				let allcommands = document.getElementById('alltable')
+				let modcommands = document.getElementById('modtable')
+				let funcommands = document.getElementById('funtable')
+				helpcommands.style.display = "none"
+				allcommands.style.display = "none"
+				modcommands.style.display = "none"
+				funcommands.style.display = "none"
 			}
 		</script>
 	</body>

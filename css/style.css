@@ -4,7 +4,6 @@ body {
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
-	overflow-y: hidden;
 }
 
 /*GLOBAL STYLES*/
@@ -65,13 +64,23 @@ body {
 .footerContent {
 	margin-left: 1%;
 }
+
+.supportdescription {
+	position: relative;
+	left: 40%;
+	padding-bottom: 2%;
+}
+
+.support a {
+	text-decoration: none;
+}
 /*GLOBAL STYLES*/
 
 
 
 /*SCROLL BAR STYLE*/
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 2px;
 }
 
 ::-webkit-scrollbar-track {
@@ -271,9 +280,47 @@ table#modtable td {
 #helptable, #modtable, #funtable {
 	display: none;
 }
+
+.supportletters {
+	width: 20%;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	padding-top: 1%;
+	font-family: Roboto, sans-serif;
+}
 /*COMMANDS PAGE*/
 
-
+/* Support Letters ----- BEGINNING*/
+.letters {
+	color: #875053;
+	padding-right: 1%;
+}
+.letteru {
+	color: #fbbfca;
+	padding-right: 1%;
+}
+.letterp1 {
+	color: #d2bf55;
+	padding-right: 1%;
+}
+.letterp2 {
+	color: #875053;
+	padding-right: 1%;
+}
+.lettero {
+	color: #fbbfca;
+	padding-right: 1%;
+}
+.letterr {
+	color: #d2bf55;
+	padding-right: 1%;
+}
+.lettert {
+	color: #875053;
+}
+/* Support Letters ----- END */
 
 /*STAFF PAGE*/
 .staffList {
