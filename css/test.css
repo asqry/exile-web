@@ -1,0 +1,510 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #2C2F33;
+	font-family: 'Whitney-Book', sans-serif;
+	overflow-x: hidden;
+}
+
+.header {
+	background-color: #23272A;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: auto;
+	height: 10%;
+}
+
+.hcontent {
+	display: inline-block;
+}
+
+.header img {
+	position: relative;
+	top: 10px;
+}
+
+h1 {
+	padding-left: 30px;
+	margin: 0;
+	display: inline-block;
+}
+
+.header h1 {
+	font-size: 40px;
+	color: mintcream;
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+}
+
+nav {
+	width: 70%;
+	float: right;
+	position: relative;
+	top: 30px;
+	right: 20px;
+	margin-right: 175px;
+}
+
+.header ul {
+	margin: 0;
+	display: inline;
+	float: right;
+}
+
+.header ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    margin-right: 0
+}
+
+.header ul li a {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    color: mintcream;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header ul li a:hover {
+	color: #7289da;
+}
+
+.header ul li a.current {
+	color: #7289DA;
+}
+
+#header:before {
+	content: 'Musica';
+	animation-name: textrotate;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+}
+
+.header ul li a.current:hover {
+	/*color: #4d67c1; */
+	color: #3752b2;
+}
+
+.basicbutton {
+	background-color: transparent;
+	border: 0;
+}
+
+.basicbutton:hover {
+	cursor: pointer;
+}
+
+/*
+CONTENT | Home Page
+*/
+
+.content {
+	background-color: #2C2F33;
+	height: 675px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;/*
+	float: right;*/
+}
+
+.serverwidget {
+	position: relative;
+	top: 50px;
+	left: -54px;
+	display: inline-block;
+}
+
+.helpcommand1 {
+	display: inline-block;
+	position: relative;
+	top: 50px;
+}
+
+.serverwidget, .helpcommand1 {
+	text-align: center;
+}
+
+.mainpage {
+	display: inline-block;
+}
+
+.invitebutton {
+	background-color: #7289DA;
+	border: 0;
+	border-radius: 5%;
+	width: 17%;
+}
+
+.invitebutton:hover {
+	background-color: transparent;
+}
+
+.invitebutton2 {
+	background-color: #7289DA;
+	border: 0;
+	border-radius: 5%;
+	width: 10%;
+	color: white;
+}
+
+.invitebutton2:hover {
+	background-color: #8289da;
+	cursor: pointer;
+}
+
+.footer {
+	color: gray;
+	position: relative;
+	bottom: 0;
+	display: none;
+}
+
+/*.serverwidget, .helpcommand1, .footer {
+	display: ;
+}*/
+
+.invitepopup {
+	width: 550px;
+	height: 590px;
+	background-color: #7289da;
+	align-content: center;
+	text-align: center;
+	color: #2C2F33;
+	position: relative;
+	left: 25%;
+	display: none;
+}
+
+.invitepopup img {
+	margin-bottom: 30px;
+	border: 3px solid #2C2F33;
+}
+
+.close {
+	text-align: center;
+	margin-right: auto;
+	height: 20px;
+	width: 20px;
+	position: relative;
+	top: 3px;
+
+}
+
+.close a {
+	color: #2C2F33;
+	text-decoration: none;
+}
+
+.close a:hover {
+	cursor: default;
+}
+
+.joinbutton {
+	width: 15%;
+	height: 5%;
+	font-size: 20px;
+	margin-top: 30px;
+	background-color: #2C2F33;
+	border-radius: 10px;
+	border: 0;
+}
+
+.joinbutton a {
+	text-decoration: none;
+	color: white;
+}
+
+.reasons {
+	margin-top: 20px;
+	border: 2px solid #2c2f33;
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 5px;
+}
+
+/*
+COMMANDS PAGE
+*/
+
+.sections {
+	width: 90%;
+	height: ;
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.section {
+	display: inline-block;
+	width: 10%;
+	height: 5%;
+	border: 3px solid #7289DA;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.section:hover {
+	background-color: #7289da;
+	cursor: pointer;
+}
+
+.section button {
+	width: 50%;
+	height: 100%;
+	background-color: transparent;
+	color: white;
+	text-align: center;
+	border: none;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10%;
+	align-items: center;
+}
+
+.section button:hover {
+	background-color: #7289da;
+	cursor: pointer;
+}
+
+/*COMMANDS TABLE*/
+table {
+	padding-top: 5%;
+	width: 100%;
+	color: white;
+}
+
+th {
+	border: 3px solid #7289da;
+	width: 10%;
+	padding: 1%;
+}
+
+td {
+	border-bottom: 1px solid #7289da;
+	padding-left: 4%;
+	padding: 2%;
+}
+
+table#othertable {
+	padding-top: 5%;
+	width: 100%;
+	color: white;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table#othertable th {
+	border: 3px solid #7289da;
+	width: 10%;
+	padding: 1%;
+}
+
+table#othertable td {
+	border-bottom: 1px solid #7289da;
+	padding-left: 4%;
+	padding: 2%;
+}
+
+#configtable, #modtable, #ecotable, #musictable, #othertable, #alltable {
+	display: none;
+}
+
+.emphcommand {
+	color: #7289da;
+	font-weight: bold;
+}
+
+/*Partners*/
+
+.partner {
+	width: 50%;
+	background-color: #7289da;
+	height: 60%;
+	display: inline-block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: 14%;
+	margin-bottom: 10%;
+	padding: 10%;
+	margin-top: 10%;
+	border-radius: 1%;
+}
+
+.partnerspage {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	height: 100%;
+	background-color: #feeed5;
+}
+
+.discrim {
+	color: #d6c5ab;
+}
+
+.pdescription {
+	border: 3px solid #2C2F33;
+	padding: 2%;
+	border-radius: 10px;
+	font-size: 1.4em
+}
+
+.infobutton {
+	padding: 2%;
+	background-color: #2C2F33;
+	color: white;
+	width: 30%;
+	border-radius: 5%;
+	border: 0;
+	cursor: pointer;
+}
+
+.partnerpopup {
+	width: 550px;
+	height: 590px;
+	background-color: #7289da;
+	align-content: center;
+	text-align: center;
+	color: #2C2F33;
+	position: relative;
+	left: 34%;
+	display: none;
+}
+
+.partnerpopup img {
+	margin-bottom: 30px;
+	border: 3px solid #2C2F33;
+}
+
+.staffs {
+	display: inline-block;
+	padding: 3%;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	left: 19px;
+}
+
+.staffsection {
+	display: inline-block;
+	border-radius: 5px;
+	width: 15%;
+	border: 3px solid #99AAB5;
+	padding: 10%;
+	text-align: center;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.staffsection img {
+	border: 3px solid #7289da;
+}
+
+.staffsection img:hover {
+	border: 3px solid #43b581;
+}
+
+
+.staffdiscrim {
+	color: #7289da;
+	padding: 5px;
+	border: 3px solid #7289da;
+	border-radius: 5px;
+	width: 1%;
+	margin-left: 3%;
+}
+
+.discord {
+	color: #7289da;
+}
+
+.sdescript {
+	color: white;
+}
+
+.sdescript:hover {
+	animation-name: description;
+	animation-duration: 4s;
+	animation-iteration-count: 199;
+}
+
+.afterfirst {
+	margin-top: 5%;
+}
+
+@keyframes description {
+	0% {
+		color: red;
+	}
+
+	25% {
+		color: orange;
+	}
+
+	50% {
+		color: lightblue;
+	}
+
+	75% {
+		color: green;
+	}
+
+	100% {
+		color: #7289da;
+	}
+}
+
+@keyframes textrotate {
+    0%, 10% {
+        content: 'Musica';
+    }
+
+    25% {
+        content: 'Music';
+    }
+
+    50% {
+        content: 'Mele';
+    }
+
+    75% {
+        content: 'Musique';
+    }
+
+    100% {
+        content: 'Musik';
+    }
+}
+
+/*SCROLL BAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2C2F33;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7289da;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #feeed5;
+}
+/*SCROLL BAR*/

@@ -1,0 +1,335 @@
+body {
+	background-color: #2C2F33;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+/*GLOBAL STYLES*/
+.current {
+	color: #7289DA;
+}
+
+.current:hover {
+	color: #99AAB5;
+}
+
+.rightPadding {
+	padding-right: 5%;
+}
+
+.alternateColors {
+	color: #7289DA;
+}
+
+.backslash {
+	font-size: 0.9em;
+	color: #7289DA;
+	font-weight: bold;
+}
+
+.highlightCode {
+	background-color: #2C2F33;
+	padding: 3px;
+	color: #99AAB5;
+	border-radius: 5px;
+	position: relative;
+}
+
+.highlightCode:hover {
+	top: 5px;
+	color: #7289DA;
+	cursor: pointer;
+}
+
+.highlightCode:active {
+	background-color: #2C2F33;
+	padding: 3px;
+	color: #99AAB5;
+	border-radius: 5px;
+	position: relative;
+}
+
+.seeker {
+	color: #7289DA;
+}
+
+.footer {
+	border-top: 2px solid #7289DA;
+	color: #99AAB5;
+	height: 50px;
+}
+
+.footerContent {
+	margin-left: 1%;
+}
+/*GLOBAL STYLES*/
+
+
+
+/*SCROLL BAR STYLE*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2C2F33;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #7289DA;
+}
+/*SCROLL BAR STYLE*/
+
+
+
+/*HEADER STYING*/
+.header {
+	background-color: #23272A;
+	width: 100%;
+	position: relative;
+}
+
+.header h1 {
+	margin-top: 0;
+	color: #99AAB5;
+	position: relative;
+	left: 5%;
+	font-size: 2.5em;
+	top: 55px;
+}
+
+.nav {
+	width: 50%;
+	position: relative;
+	left: 75%;
+	top: -100%;
+}
+
+.nav ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: #99AAB5;
+	font-size: 1.1em;
+}
+
+.nav ul li a:hover {
+	color: #7289da;
+}
+.nav ul li a.current {
+	color: #7289da;
+}
+/*HEADER STYING*/
+
+
+
+/*HOME PAGE STYLE*/
+.main {
+	background-color: #2C2F33;
+}
+
+.featuresList {
+	background-color: #99AAB5;
+	width: 100%;
+}
+
+.feature {
+	width: 40%;
+	border: 2px solid #7289da;
+	display: inline-block;
+	text-align: center;
+	border-radius: 5px;
+	margin: 1%;
+	padding: 2%;
+	color: #23272A;
+}
+
+.featureML {
+	margin-left: 5%;
+}
+
+.horizontalLine {
+	width: 50%;
+	margin-top: 1%;
+	height: 5px;
+	background-color: #7289da;
+	border-radius: 50%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+/*HOME PAGE STYLE*/
+
+/*COMMANDS PAGE*/
+.info {
+	text-align: center;
+	color: #99AAB5;
+}
+
+.infoP {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.bot {
+	background-color: #7289da;
+	padding: 0.2%;
+	padding-right: 0.4%;
+	color: white;
+	border-radius: 10px;
+	font-size: 0.8em;
+}
+
+/*COMMAND CATEGORIES*/
+.switchers {
+	width: 50%;
+	margin: 2%;
+}
+
+.switcherDiv {
+	display: inline-block;
+	width: 128%;
+	background-color: transparent;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+button.switcher {
+	width: 150%;
+	background-color: transparent;
+	border: 3px solid #7289da;
+	color: white;
+	padding: 30px;
+	text-align: center;
+	margin-bottom: 2.5%;
+	border-radius: 10px;
+}
+
+button.switcher:hover {
+	background-color: #7289da;
+	cursor: pointer;
+}
+
+#helptable, #alltable, #modtable, #funtable {
+	width: 185%;
+	padding: 3%;
+	color: white;
+}
+
+.bottomPadding {
+	padding-bottom: 3%;
+}
+/*COMMAND CATEGORIES*/
+
+table {
+	padding-top: 2%;
+	width: 100%;
+	color: white;
+	padding-bottom: 1%;
+}
+
+th {
+	border: 3px solid #99AAB5;
+	width: 10%;
+	padding: 1%;
+}
+
+td {
+	border-bottom: 1px solid #99AAB5;
+	padding-left: 4%;
+	padding: 2%;
+}
+
+table#modtable {
+	padding-top: 5%;
+	width: 100%;
+	color: white;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table#modtable th {
+	border: 3px solid #99AAB5;
+	width: 10%;
+	padding: 1%;
+}
+
+table#modtable td {
+	border-bottom: 1px solid #99AAB5;
+	padding-left: 4%;
+	padding: 2%;
+}
+
+
+#helptable, #modtable, #funtable {
+	display: none;
+}
+/*COMMANDS PAGE*/
+
+
+
+/*STAFF PAGE*/
+.staffList {
+	background-color: #99AAB5;
+	width: 100%;
+}
+
+.staffBlock img {
+	border-radius: 50%;
+	border: 5px solid #43b581;
+}
+
+.staffBlock {
+	width: 40%;
+	display: inline-block;
+	text-align: center;
+	margin: 1%;
+	padding: 2%;
+	color: #23272A;
+}
+
+img.offline {
+	border: 5px solid #f04747;
+}
+
+.staffML {
+	margin-left: 4.5%;
+}
+
+.staffBlockBottomBorder {
+	border-bottom: 2px solid #7289da;
+	border-radius: 3px;
+}
+
+.availableStaffBlock {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.availableStaffBlock img {
+	border-radius: 50%;
+	margin-top: 3%;
+}
+
+.availablePositions {
+	margin-bottom: 0;
+}
+
+img.golden {
+	border-radius: 50%;
+	border: 5px solid #d4af37;
+}
+
+img.purple {
+	border: 5px solid #593695;
+}
+/*STAFF PAGE*/

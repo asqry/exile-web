@@ -1,0 +1,545 @@
+<!doctype html>
+<html>
+<head>
+	<title>Musica | Commands</title>
+	<link type="icon" rel="icon" href="./images/musica (1).jpg">
+	<link rel="stylesheet" href="./css/test.css">
+</head>
+<body>
+	<div class="header">
+			<img class="hcontent" src="./images/musica (1).jpg" alt="Musica Logo" height="50px" width="50px" style="border-radius:100%;">
+			<button class="basicbutton" onClick="changeHeader()"><h1 class="htext hcontent" id="header"></h1></button>
+
+			<nav>
+			<ul>
+				<li class="hcontent"><a href="index.html">Home</a></li>
+				<li class="hcontent"><a href="partners.html">Partners</a></li>
+				<li class="hcontent"><a href="commands.html" class="current">Commands</a></li>
+				<li class="hcontent"><a href="staff.html">Server Staff</a></li>
+			</ul>
+		</nav>
+		</div>
+		<div class="maincontent">
+
+			<div class="sections">
+				<div class="section">
+					<button class="useful tablesection" onClick="touseful()">Useful</button>
+				</div>
+				<div class="section">
+					<button class="config tablesection" onClick="toconfig()">Config</button>
+				</div>
+				<div class="section">
+					<button class="mod tablesection" onClick="tomod()">Moderation</button>
+				</div>
+				<div class="section">
+					<button class="eco tablesection" onClick="toeco()">Economy</button>
+				</div>
+				<div class="section">
+					<button class="music tablesection" onClick="tomusic()">Music</button>
+				</div>
+				<div class="section">
+					<button class="other tablesection" onClick="toother()">Other</button>
+				</div>
+				<div class="section">
+					<button class="all tablesection" onClick="toall()">All</button>
+				</div>
+			</div>
+			<table id="usefultable">
+				<tr>
+					<th>Command</th>
+					<th>Usage</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>.help</td>
+					<td>.help</td>
+					<td>Displays the help/command list</td>
+				</tr>
+				<tr>
+					<td>.help config</td>
+					<td>.help [config, cf]</td>
+					<td>Displays the configuration commands</td>
+				</tr>
+				<tr>
+					<td>.help moderation</td>
+					<td>.help [moderation, mod]</td>
+					<td>Displays the moderation commands</td>
+				</tr>
+				<tr>
+					<td>.help economy</td>
+					<td>.help [economy, eco]</td>
+					<td>Displays the economy commands</td>
+				</tr>
+				<tr>
+					<td>.help music</td>
+					<td>.help music</td>
+					<td>Displays the music commands</td>
+				</tr>
+				<tr>
+					<td>.help other</td>
+					<td>.help [other, misc]</td>
+					<td>Displays the miscellaneous commands</td>
+				</tr>
+				<tr>
+					<td>.serverinfo</td>
+					<td>.serverinfo</td>
+					<td>Displays information about the current server</td>
+				</tr>
+				<tr>
+					<td>.botinfo</td>
+					<td>.botinfo</td>
+					<td>Displays information about the bot</td>
+				</tr>
+				<tr>
+					<td>.new</td>
+					<td>.new [issue]</td>
+					<td>Creates a new ticket to solve all of your problems</td>
+				</tr>
+				<tr>
+					<td>.close</td>
+					<td>.close</td>
+					<td>Closes the current ticket, only works within ticket channels</td>
+				</tr>
+				<tr>
+					<td>.suggest</td>
+					<td>.suggest [suggestion]</td>
+					<td>Sends your suggestion in the set suggestion channel</td>
+				</tr>
+			</table>
+
+			<!-- CONFIG TABLE -->
+			<table id="configtable">
+				<tr>
+					<th>Command</th>
+					<th>Usage</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>.joinchannel</td>
+					<td>.joinchannel [channelID]</td>
+					<td>Sets the channel for join messages</td>
+				</tr>
+				<tr>
+					<td>.announcechannel</td>
+					<td>.announcechannel [channelID]</td>
+					<td>Sets the channel in which announcements will be sent</td>
+				</tr>
+				<tr>
+					<td>.modlogchannel</td>
+					<td>.modlogchannel [channelID]</td>
+					<td>Sets the channel that all moderation commands will be logged in</td>
+				</tr>
+				<tr>
+					<td>.logchannel</td>
+					<td>.logchannel [channelID]</td>
+					<td>Sets the channel for logging all other commands</td>
+				</tr>
+				<tr>
+					<td>.suggestchannel</td>
+					<td>.suggestchannel [channelID]</td>
+					<td>Sets the channel in which suggestions will be sent</td>
+				</tr>
+				<tr>
+					<td>.musicchannel</td>
+					<td>.musicchannel [voiceChannelID]</td>
+					<td>Sets the channel in which the bot will join when <strong>.play</strong> is executed</td>
+				</tr>
+				<tr>
+					<td>.autorole</td>
+					<td>.autorole [roleName, roleID]</td>
+					<td>Sets the role that will be automatically given to new users</td>
+				</tr>
+			</table>
+
+			<!-- MODERATION TABLE -->
+			<table id="modtable">
+				<tr>
+					<th>Command</th>
+					<th>Usage</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>.announce</td>
+					<td>.announce [announcement] <strong>*Tags everyone</strong></td>
+					<td>Sends an announcement in the specified announcement channel, tags everyone</td>
+				</tr>
+				<tr>
+					<td>.clear</td>
+					<td>.clear [# of messages]</td>
+					<td>Clears the specified amount of messages from the channel</td>
+				</tr>
+				<tr>
+					<td>.say</td>
+					<td>.say [message]</td>
+					<td>The bot outputs the given message</td>
+				</tr>
+				<tr>
+					<td>.warn</td>
+					<td>.warn [@user] [reason]</td>
+					<td>Warns the specified user</td>
+				</tr>
+				<tr>
+					<td>.kick</td>
+					<td>.kick [@user] [reason]</td>
+					<td>Kicks the specified user from the server</td>
+				</tr>
+				<tr>
+					<td>.ban</td>
+					<td>.ban [@user] [reason]</td>
+					<td>Bans the specified user from the server</td>
+				</tr>
+				<tr>
+					<td>.mute</td>
+					<td>.mute [@user] [time] [reason]</td>
+					<td>Mutes the user for the specified amount of time</td>
+				</tr>
+				<tr>
+					<td>.addrole</td>
+					<td>.addrole [@user] [roleName, roleID]</td>
+					<td>Gives the user the specified role</td>
+				</tr>
+				<tr>
+					<td>.removerole</td>
+					<td>.removerole [@user] [roleName, roleID]</td>
+					<td>Removes the specified role from the user</td>
+				</tr>
+			</table>
+
+			<!-- ECONOMY COMMANDS -->
+
+			<table id="ecotable">
+				<tr>
+					<th>Command</th>
+					<th>Usage</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>.coins</td>
+					<td>.coins</td>
+					<td>Checks your coin balance, cannot check other's balance</td>
+				</tr>
+				<tr>
+					<td>.level</td>
+					<td>.level</td>
+					<td>Checks your level and remaining XP, cannot check other's level</td>
+				</tr>
+			</table>
+
+			<!-- MUSIC COMMANDS -->
+
+			<table id="musictable">
+				<tr>
+					<th>Command</th>
+					<th>Usage</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>.play</td>
+					<td>.play [youtube link]</td>
+					<td>Plays the specified link in the dedicated music channel</td>
+				</tr>
+				<tr>
+					<td>.leave</td>
+					<td>.leave</td>
+					<td>Forces the bot out of the music channel</td>
+				</tr>
+			</table>
+
+			<!-- OTHER COMMANDS -->
+			<table id="othertable">
+				<tr>
+					<th>Command</th>
+					<th>Usage</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>.8ball</td>
+					<td>.8ball [question]</td>
+					<td>Let the 8 ball make your decision</td>
+				</tr>
+			</table>
+
+			<!-- ALL COMMANDS -->
+
+			<table id="alltable">
+				<tr>
+					<th>Command</th>
+					<th>Usage</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>.help</td>
+					<td>.help</td>
+					<td>Displays the help/command list</td>
+				</tr>
+				<tr>
+					<td>.help config</td>
+					<td>.help [config, cf]</td>
+					<td>Displays the configuration commands</td>
+				</tr>
+				<tr>
+					<td>.help moderation</td>
+					<td>.help [moderation, mod]</td>
+					<td>Displays the moderation commands</td>
+				</tr>
+				<tr>
+					<td>.help economy</td>
+					<td>.help [economy, eco]</td>
+					<td>Displays the economy commands</td>
+				</tr>
+				<tr>
+					<td>.help music</td>
+					<td>.help music</td>
+					<td>Displays the music commands</td>
+				</tr>
+				<tr>
+					<td>.help other</td>
+					<td>.help [other, misc]</td>
+					<td>Displays the miscellaneous commands</td>
+				</tr>
+				<tr>
+					<td>.serverinfo</td>
+					<td>.serverinfo</td>
+					<td>Displays information about the current server</td>
+				</tr>
+				<tr>
+					<td>.botinfo</td>
+					<td>.botinfo</td>
+					<td>Displays information about the bot</td>
+				</tr>
+				<tr>
+					<td>.new</td>
+					<td>.new [issue]</td>
+					<td>Creates a new ticket to solve all of your problems</td>
+				</tr>
+				<tr>
+					<td>.close</td>
+					<td>.close</td>
+					<td>Closes the current ticket, only works within ticket channels</td>
+				</tr>
+				<tr>
+					<td>.suggest</td>
+					<td>.suggest [suggestion]</td>
+					<td>Sends your suggestion in the set suggestion channel</td>
+				</tr>
+				<tr>
+					<td>.joinchannel</td>
+					<td>.joinchannel [channelID]</td>
+					<td>Sets the channel for join messages</td>
+				</tr>
+				<tr>
+					<td>.announcechannel</td>
+					<td>.announcechannel [channelID]</td>
+					<td>Sets the channel in which announcements will be sent</td>
+				</tr>
+				<tr>
+					<td>.modlogchannel</td>
+					<td>.modlogchannel [channelID]</td>
+					<td>Sets the channel that all moderation commands will be logged in</td>
+				</tr>
+				<tr>
+					<td>.logchannel</td>
+					<td>.logchannel [channelID]</td>
+					<td>Sets the channel for logging all other commands</td>
+				</tr>
+				<tr>
+					<td>.suggestchannel</td>
+					<td>.suggestchannel [channelID]</td>
+					<td>Sets the channel in which suggestions will be sent</td>
+				</tr>
+				<tr>
+					<td>.musicchannel</td>
+					<td>.musicchannel [voiceChannelID]</td>
+					<td>Sets the channel in which the bot will join when <strong>.play</strong> is executed</td>
+				</tr>
+				<tr>
+					<td>.autorole</td>
+					<td>.autorole [roleName, roleID]</td>
+					<td>Sets the role that will be automatically given to new users</td>
+				</tr>
+				<tr>
+					<td>.announce</td>
+					<td>.announce [announcement] <strong>*Tags everyone</strong></td>
+					<td>Sends an announcement in the specified announcement channel, tags everyone</td>
+				</tr>
+				<tr>
+					<td>.clear</td>
+					<td>.clear [# of messages]</td>
+					<td>Clears the specified amount of messages from the channel</td>
+				</tr>
+				<tr>
+					<td>.say</td>
+					<td>.say [message]</td>
+					<td>The bot outputs the given message</td>
+				</tr>
+				<tr>
+					<td>.warn</td>
+					<td>.warn [@user] [reason]</td>
+					<td>Warns the specified user</td>
+				</tr>
+				<tr>
+					<td>.kick</td>
+					<td>.kick [@user] [reason]</td>
+					<td>Kicks the specified user from the server</td>
+				</tr>
+				<tr>
+					<td>.ban</td>
+					<td>.ban [@user] [reason]</td>
+					<td>Bans the specified user from the server</td>
+				</tr>
+				<tr>
+					<td>.mute</td>
+					<td>.mute [@user] [time] [reason]</td>
+					<td>Mutes the user for the specified amount of time</td>
+				</tr>
+				<tr>
+					<td>.addrole</td>
+					<td>.addrole [@user] [roleName, roleID]</td>
+					<td>Gives the user the specified role</td>
+				</tr>
+				<tr>
+					<td>.removerole</td>
+					<td>.removerole [@user] [roleName, roleID]</td>
+					<td>Removes the specified role from the user</td>
+				</tr>
+				<tr>
+					<td>.coins</td>
+					<td>.coins</td>
+					<td>Checks your coin balance, cannot check other's balance</td>
+				</tr>
+				<tr>
+					<td>.level</td>
+					<td>.level</td>
+					<td>Checks your level and remaining XP, cannot check other's level</td>
+				</tr>
+				<tr>
+					<td>.play</td>
+					<td>.play [youtube link]</td>
+					<td>Plays the specified link in the dedicated music channel</td>
+				</tr>
+				<tr>
+					<td>.leave</td>
+					<td>.leave</td>
+					<td>Forces the bot out of the music channel</td>
+				</tr>
+				<tr>
+					<td>.8ball</td>
+					<td>.8ball [question]</td>
+					<td>Let the 8 ball make your decision</td>
+				</tr>
+			</table>
+			<p style="color:white;padding:1%;">[ ] = Parameters, separated by commas.<br><br>Parameters are required, if commas are present then only one parameter is required.<br><br>When using role related commands, make sure to not @ the role. Provide the name (e.g. <span class="emphcommand">.addrole Developer</span> or <span class="emphcommand">.addrole 334392742266535957</span>)</p>
+		</div>
+
+		<!--
+		LIVE RELOAD
+		-->
+
+
+		<!-- TABLE SWITCHING -->
+		<script>
+			function touseful() {
+				let usefulcommands = document.getElementById('usefultable')
+				let configcommands = document.getElementById('configtable')
+				let modcommands = document.getElementById('modtable')
+				let ecocommands = document.getElementById('ecotable')
+				let musiccommands = document.getElementById('musictable')
+				let othercommands = document.getElementById('othertable')
+				usefulcommands.style.display = "block"
+				configcommands.style.display = "none"
+				modcommands.style.display = "none"
+				ecocommands.style.display = "none"
+				musiccommands.style.display = "none"
+				othercommands.style.display = "none"
+				document.getElementById('alltable').style.display = "none"
+				console.log("It worked")
+			}
+			function toconfig() {
+				let configcommands = document.getElementById('configtable')
+				let usefulcommands = document.getElementById('usefultable')
+				let modcommands = document.getElementById('modtable')
+				let ecocommands = document.getElementById('ecotable')
+				let musiccommands = document.getElementById('musictable')
+				let othercommands = document.getElementById('othertable')
+				configcommands.style.display = "block"
+				usefulcommands.style.display = "none"
+				modcommands.style.display = "none"
+				ecocommands.style.display = "none"
+				musiccommands.style.display = "none"
+				othercommands.style.display = "none"
+			}
+			function tomod() {
+				let modcommands = document.getElementById('modtable')
+				let configcommands = document.getElementById('configtable')
+				let usefulcommands = document.getElementById('usefultable')
+				let ecocommands = document.getElementById('ecotable')
+				let musiccommands = document.getElementById('musictable')
+				let othercommands = document.getElementById('othertable')
+				modcommands.style.display = "block"
+				usefulcommands.style.display = "none"
+				configcommands.style.display = "none"
+				ecocommands.style.display = "none"
+				musiccommands.style.display = "none"
+				othercommands.style.display = "none"
+			}
+			function toeco() {
+				let ecocommands = document.getElementById('ecotable')
+				let modcommands = document.getElementById('modtable')
+				let configcommands = document.getElementById('configtable')
+				let usefulcommands = document.getElementById('usefultable')
+				let musiccommands = document.getElementById('musictable')
+				let othercommands = document.getElementById('othertable')
+				modcommands.style.display = "none"
+				usefulcommands.style.display = "none"
+				configcommands.style.display = "none"
+				ecocommands.style.display = "block"
+				musiccommands.style.display = "none"
+				othercommands.style.display = "none"
+			}
+			function tomusic() {
+				let musiccommands = document.getElementById('musictable')
+				let ecocommands = document.getElementById('ecotable')
+				let modcommands = document.getElementById('modtable')
+				let configcommands = document.getElementById('configtable')
+				let usefulcommands = document.getElementById('usefultable')
+				let othercommands = document.getElementById('othertable')
+				modcommands.style.display = "none"
+				usefulcommands.style.display = "none"
+				configcommands.style.display = "none"
+				ecocommands.style.display = "none"
+				musiccommands.style.display = "block"
+				othercommands.style.display = "none"
+			}
+			function toother() {
+				let othercommands = document.getElementById('othertable')
+				let musiccommands = document.getElementById('musictable')
+				let ecocommands = document.getElementById('ecotable')
+				let modcommands = document.getElementById('modtable')
+				let configcommands = document.getElementById('configtable')
+				let usefulcommands = document.getElementById('usefultable')
+				modcommands.style.display = "none"
+				usefulcommands.style.display = "none"
+				configcommands.style.display = "none"
+				ecocommands.style.display = "none"
+				musiccommands.style.display = "none"
+				othercommands.style.display = "block"
+			}
+			function toall() {
+				let usefulcommands = document.getElementById('usefultable')
+				let configcommands = document.getElementById('configtable')
+				let modcommands = document.getElementById('modtable')
+				let ecocommands = document.getElementById('ecotable')
+				let musiccommands = document.getElementById('musictable')
+				let othercommands = document.getElementById('othertable')
+				let allcommands = document.getElementById('alltable')
+				usefulcommands.style.display = "none"
+				configcommands.style.display = "none"
+				modcommands.style.display = "none"
+				ecocommands.style.display = "none"
+				musiccommands.style.display = "none"
+				othercommands.style.display = "none"
+				allcommands.style.display = "block"
+			}
+		</script>
+</body>
+</html>
